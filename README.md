@@ -24,3 +24,6 @@ Achieved **~93% accuracy** on the test dataset. Deployed locally using Streamlit
 -> What I Learned
 Improved understanding of data preprocessing, text vectorization, and model evaluation metrics.
 
+->Live Demo
+https://fake-news-detector-python.streamlit.app
+
