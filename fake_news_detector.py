@@ -1,14 +1,3 @@
-"""
-Fake News Detector - Simplified Version (No External Dependencies Issues)
-Built with Python and Streamlit
-
-Installation:
-pip install streamlit
-
-Run:
-streamlit run fake_news_detector.py
-"""
-
 import streamlit as st
 import re
 from collections import Counter
@@ -41,7 +30,7 @@ class SimpleFakeNewsDetector:
     """Simplified NLP-based fake news detection system"""
     
     def __init__(self):
-        # Fake news indicators with severity weights
+        # Fake news indicators 
         self.indicators = {
             'sensational': {
                 'keywords': ['shocking', 'unbelievable', 'you won\'t believe', 'secret revealed', 
@@ -178,7 +167,7 @@ class SimpleFakeNewsDetector:
         normalized_fake_score = min(100, (fake_score / 50) * 100)
         normalized_cred_score = min(100, (credibility_score / 20) * 100)
         
-        # Text complexity bonus (longer, complex text is usually more credible)
+        # Text complexity bonus 
         complexity_bonus = 0
         if text_features['word_count'] > 100 and text_features['avg_word_length'] > 5:
             complexity_bonus = 10
